@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    /* font-family: 'Inter', sans-serif; */
+
+}
+
+:root{
+    --primary-color: #6366f1;
+    --secondary-color: #a5b4fc;
+    --background-color: #0f172a;
+    --text-color: #e2e8f0;
+    --section-background: #1e293b;
+    --border-color: #334155;
+}
+body{
+    font-family: 'Inter', sans-serif;
+    background-color: var(--background-color);
+    display: block;
+    margin: 8vw;
+    margin-left: 12.5vw;
+    line-height: 1.8;
+}
+
+section{
+    background-color: var(--section-background);
+    border: 1px solid var(--border-color);
+    border-radius: 10px;
+    padding: 0 2rem;
+    margin-bottom: 2rem auto;
+    max-width: 1000px;
+    display: block;
+}
+
+h2, h3 {
+    color: var(--secondary-color);
+    display: block;
+    font-size: 2 rem;
+    font-weight: bold;
+    padding-top: 1rem;
+    margin-top: 1rem;
+}
+
+h2{
+    margin-top: 2rem;
+}
+
+p{
+    color: var(--text-color);
+    padding-top: 0.5rem;
+    padding-bottom: 1rem;
+    /* margin: 20px; */
+}
+
+table{
+    border: var(--border-color);
+    border-spacing: 0;
+    border-radius: 10px;
+    width: 100%;
+    color: var(--text-color);
+    overflow: hidden;
+    display: table;
+    font-size: 16px;
+    /* font-weight: bold; */
+    /* padding: 1rem; */
+}
+
+thead{
+    background-color: var(--primary-color);
+    color: #ffffff;
+
+    
+}
+
+th, td {
+    padding: 1rem;
+    text-align: left;
+    border-bottom: 1px solid var(--border-color);
+}
+
+td{
+    display: table-cell;
+}
+
+@media (max-width: 768px) {
+    table, th, td, p {
+        font-size: 0.85rem;
+    }
+}
+
+@media (max-width: 375px) {
+    table, th, td{
+        font-size: 0.80rem;
+    }
+    th, td{
+        padding: 0.5rem;
+    }
+}
+
+@media (max-width: 320px) {
+    table, th, td, p {
+        font-size: 0.75rem;
+    }
+
+    th, td{
+        padding: 0.5rem;
+    }
+
+    h2{
+        font-size: 0.9rem;
+    }
+
+    p{
+        font-size: 0.7rem;
+    }
+}
