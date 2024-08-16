@@ -16,6 +16,49 @@
     --section-background: #1e293b;
     --border-color: #334155;
 }
+
+.lightmode{
+    --primary-color: #6366f1;
+    --secondary-color: #0f172a;
+    --background-color:#a5b4fc;
+    --text-color:  #0f172a;
+    --section-background: #e2e8f0;
+    --border-color: #1e293b;
+}
+
+#theme-switch{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background-color: var(--primary-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 20px;
+    right: 20px;
+}
+
+#theme-switch:hover{
+    background-color: var(--secondary-color);
+    transition: 1s ease;
+}
+
+#theme-switch svg{
+    fill: black;
+}
+#theme-switch svg:last-child{
+    display: none;
+}
+
+.lightmode #theme-switch svg:first-child{
+    display: none;
+}
+.lightmode #theme-switch svg:last-child{
+    display: block;
+}
+
+
 body{
     font-family: 'Inter', sans-serif;
     background-color: var(--background-color);
